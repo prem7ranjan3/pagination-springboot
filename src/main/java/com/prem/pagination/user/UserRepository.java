@@ -1,4 +1,4 @@
-package com.bafoly.pagination.user;
+package com.prem.pagination.user;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 

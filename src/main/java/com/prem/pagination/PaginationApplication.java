@@ -1,9 +1,9 @@
-package com.bafoly.pagination;
+package com.prem.pagination;
 
 import java.util.stream.IntStream;
 
-import com.bafoly.pagination.user.User;
-import com.bafoly.pagination.user.UserRepository;
+import com.prem.pagination.user.User;
+import com.prem.pagination.user.UserRepository;
 
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
@@ -19,7 +19,7 @@ public class PaginationApplication {
 
 	@Bean
 	CommandLineRunner run(UserRepository userRepository){
-		return args -> IntStream.rangeClosed(1, 30).forEach(i -> {
+		return args -> IntStream.rangeClosed(1, 50).forEach(i -> {
 			User user = new User();
 			user.setUsername("user-" + i);
 			user.setEmail("user" + i + "@mail.com");
